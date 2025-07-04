@@ -1,10 +1,10 @@
-package org.example.Lesson6;
+package org.example.Lesson6File;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class TestSpring {
     public static void main(String[] args) {
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext6.xml");
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext6File.xml");
 
         MusicPlayer musicPlayer = context.getBean("musicPlayer", MusicPlayer.class );
         musicPlayer.playMusic();
